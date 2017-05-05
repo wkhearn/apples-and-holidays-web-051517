@@ -1,0 +1,27 @@
+
+[1mFrom:[0m /home/wkhearn-47862/code/labs/apples-and-holidays-web-051517/lib/holiday.rb @ line 66 Object#all_supplies_in_holidays:
+
+    [1;34m53[0m: [32mdef[0m [1;34mall_supplies_in_holidays[0m(holiday_hash)
+    [1;34m54[0m:   [1;34m# iterate through holiday_hash and print items such that your readout resembles:[0m
+    [1;34m55[0m: [1;34m#  puts "Winter:"[0m
+    [1;34m56[0m: [1;34m#  puts "  Christmas: Lights, Wreath"[0m
+    [1;34m57[0m: [1;34m#  puts "  New Years: Party Hats"[0m
+    [1;34m58[0m: [1;34m#  puts "Summer:"[0m
+    [1;34m59[0m: [1;34m#  puts "  Fourth Of July: Fireworks, BBQ"[0m
+    [1;34m60[0m: [1;34m#  puts "Fall:"[0m
+    [1;34m61[0m: [1;34m#  puts "  Thanksgiving: Turkey"[0m
+    [1;34m62[0m: [1;34m#  puts "Spring:"[0m
+    [1;34m63[0m: [1;34m#  puts "  Memorial Day: BBQ"[0m
+    [1;34m64[0m:   holiday_hash.each [32mdo[0m |season, data|
+    [1;34m65[0m:     puts season.to_s.capitalize << [31m[1;31m"[0m[31m:[1;31m"[0m[31m[0m
+ => [1;34m66[0m:     binding.pry
+    [1;34m67[0m:     data.each [32mdo[0m |holiday, value|
+    [1;34m68[0m:       [32mif[0m value.size > [1;34m1[0m
+    [1;34m69[0m:         puts [31m[1;31m"[0m[31m  [1;31m"[0m[31m[0m + holiday.to_s.split([31m[1;31m"[0m[31m_[1;31m"[0m[31m[0m).map(&[33m:capitalize[0m).join([31m[1;31m'[0m[31m [1;31m'[0m[31m[0m) << [31m[1;31m"[0m[31m: [1;31m"[0m[31m[0m + value.map.join([31m[1;31m"[0m[31m, [1;31m"[0m[31m[0m)
+    [1;34m70[0m:       [32melsif[0m
+    [1;34m71[0m:         puts [31m[1;31m"[0m[31m  [1;31m"[0m[31m[0m + holiday.to_s.split([31m[1;31m"[0m[31m_[1;31m"[0m[31m[0m).map(&[33m:capitalize[0m).join([31m[1;31m'[0m[31m [1;31m'[0m[31m[0m) << [31m[1;31m"[0m[31m: [1;31m"[0m[31m[0m + value.join.split([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m).map.join([31m[1;31m'[0m[31m [1;31m'[0m[31m[0m)
+    [1;34m72[0m:       [32mend[0m
+    [1;34m73[0m:     [32mend[0m
+    [1;34m74[0m:   [32mend[0m
+    [1;34m75[0m: [32mend[0m
+
